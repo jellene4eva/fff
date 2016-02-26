@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @escort.name %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @escort.age %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @escort.description %>
+</p>
+
+<p>
+  <strong>Rate per hour in cents:</strong>
+  <%= @escort.rate_per_hour_in_cents %>
+</p>
+
+<%= link_to 'Edit', edit_escort_path(@escort) %> |
+<%= link_to 'Back', escorts_path %>
